@@ -118,7 +118,8 @@ public class VMProfileView extends AbstractConsoleView
     String line = fqn + "." + method;
     if (line.length() > size)
     {
-      line = "..." + line.substring(3, size);
+      int start = line.length() - size + 3;
+      line = "..." + line.substring(start);
     }
     return line;
   }
