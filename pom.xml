@@ -40,6 +40,11 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.jvmtop.JvmTop</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
                 <executions>
                     <execution>
@@ -91,7 +96,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>  
+            </plugin>
         </plugins>
     </build>
 </project>

@@ -17,7 +17,7 @@ if [ ! -f "$TOOLSJAR" ] ; then
         echo "$JAVA_HOME seems to be no JDK!" >&2
         exit 1
 fi
-
-"$JAVA_HOME"/bin/java $JAVA_OPTS -cp "$DIR/jvmtop.jar:$TOOLSJAR" \
+echo "DIR is : $DIR"
+"$JAVA_HOME"/bin/java $JAVA_OPTS -cp "$DIR/target/jvmtop-0.9.0-SNAPSHOT.jar:$TOOLSJAR" \
 com.jvmtop.JvmTop "$@"
 exit $?
